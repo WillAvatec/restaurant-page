@@ -1,1 +1,1 @@
-alert("Webpack working properly.");
+console.log("hi.");
