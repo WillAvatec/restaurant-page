@@ -1,7 +1,18 @@
+@font-face {
+    font-family: bernadette;
+    src: url(../src/bernadette_rough.ttf);
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -10,12 +21,17 @@
     height: 50vw;
     background-image: url(../src/cup.jpg);
     background-repeat:round;
-    background-size: contain;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.presentation {
+    margin: 0 auto;
 }
 
 .text-container {
     color: aliceblue;
-    margin-top: 5rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,28 +41,37 @@
 }
 
 #marca {
-    margin-top: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 92px;
-    font-weight: 700;
-    word-spacing: 7px;
-    color: #e0dfdc;
-
+    font-family: bernadette, sans-serif;
+    font-size: 9rem;
+    color: #fff1;
     text-shadow: 
       0 -1px 1px #fff, 
-      0 1px 3px #2e2e2e, 
+      0 1px 3px #111, 
       0 2px 3px #2c2c2c, 
       0 3px 3px #000,
       0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
+.footer {
+    margin-top: auto;
+    padding: 7px;
+    background-color: rgba(20, 20, 20, 0.55);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer  a {
+    font-size: 1.1rem;
+}
 
 nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     list-style: none;
-    padding: 15px;
+    padding: 20px;
     background-color: rgba(20, 20, 20, 0.55);
 }
 
