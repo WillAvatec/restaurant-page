@@ -1,11 +1,23 @@
-import defaultHead from './header.js';
-import defaultMain from './main-content.js';
-import defaultFoot from './footer.js';
+import createHeader from './header.js';
+import createPresentation from './main-content.js';
+import createFooter from './footer.js';
 
 export default function Initialize (){
+
+    const content = document.querySelector('#content');
+
     createHeader();
     createPresentation();
     createFooter();
 
     return
+}
+
+export const createHelper = (create,clName,parent)=>{
+    const content = document.querySelector("#content");
+    let element = document.createElement(create);
+    if(clName) element.className = clName;
+    parent.appendChild(element);
+        
+    return element;
 }
