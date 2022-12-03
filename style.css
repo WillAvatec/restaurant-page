@@ -1,6 +1,6 @@
 @font-face {
     font-family: bernadette;
-    src: url(../src/bernadette_rough.ttf);
+    src: url(../src/assets/bernadette_rough.ttf);
   }
 
 * {
@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 50vw;
-    background-image: url(../src/cup.jpg);
+    background-image: url(../src/assets/cup.jpg);
     background-repeat:round;
     background-size: cover;
     min-height: 100vh;
