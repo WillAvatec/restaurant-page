@@ -1,3 +1,3 @@
-import Initialize from "./website.js";
+import Initialize from "./js-modules/website";
 
 Initialize();
