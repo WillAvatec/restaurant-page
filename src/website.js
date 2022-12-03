@@ -1,10 +1,8 @@
-import createHeader from './header.js';
+import createHeader from './js-modules';
 import createPresentation from './main-content.js';
 import createFooter from './footer.js';
 
 export default function Initialize (){
-
-    const content = document.querySelector('#content');
 
     createHeader();
     createPresentation();
