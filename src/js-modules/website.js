@@ -1,6 +1,6 @@
-import createHeader from './header.js';
-import createPresentation from './main-content.js';
-import createFooter from './footer.js';
+import createHeader from './header';
+import createPresentation from './main-content';
+import createFooter from './footer';
 
 export default function Initialize (){
 
