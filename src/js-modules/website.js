@@ -8,8 +8,10 @@ export default function Initialize (){
     createPresentation();
     createFooter();
 
-    return
+    return links
 }
+
+
 
 export const createHelper = (create,clName,parent)=>{
     const content = document.querySelector("#content");
@@ -18,4 +20,9 @@ export const createHelper = (create,clName,parent)=>{
     parent.appendChild(element);
         
     return element;
+}
+
+export const cleanContent = ()=>{
+    const content = document.querySelector(".presentation");
+    content.innerHTML = "";
 }
