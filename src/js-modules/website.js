@@ -1,11 +1,11 @@
 import createHeader from './header';
-import createPresentation from './main-content';
+import FirstLoadMain from './main-content';
 import createFooter from './footer';
 
 export default function Initialize (){
 
-    createHeader();
-    createPresentation();
+    let links = createHeader();
+    FirstLoadMain();
     createFooter();
 
     return links
