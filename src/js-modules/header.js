@@ -9,5 +9,7 @@ export default function createHeader(){
     menuLink.textContent = 'Menu';
     let contactLink = createHelper("a","contact",nav);
     contactLink.textContent = 'Contact Us';
-    return section
+
+    return {homeLink, menuLink, contactLink}
+
 }
